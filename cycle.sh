@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Remove old
-sudo apt purge gyrator
+sudo apt purge chimken
 
 # Package new
 ./package.sh
 
 # Install new
-sudo apt install ./gyrator.deb
+sudo apt install ./chimken.deb
 
 # Show new
 ./test.sh

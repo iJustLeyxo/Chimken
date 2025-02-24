@@ -2,7 +2,7 @@
 
 # Uninstall theme
 echo -e "Removing theme"
-sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/gyrator/gyrator.plymouth &> /dev/null
+sudo update-alternatives --remove default.plymouth /usr/share/plymouth/themes/chimken/chimken.plymouth &> /dev/null
 echo -e "Selecting default theme"
 sudo update-alternatives --auto default.plymouth
 echo -e "Updating initramfs"

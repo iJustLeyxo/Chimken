@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-NAME=gyrator
+NAME=chimken
 
 # Remove old .deb
 if [ -e "${PWD}/${NAME}.deb" ]; then

@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Chimken
+Description=Rotating Ubuntu logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/chimken/
+ScriptFile=/usr/share/plymouth/themes/chimken/chimken.script
+UseFirmwareBackground=false
