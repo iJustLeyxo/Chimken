@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Removal complete
+echo -e "Removal complete"
