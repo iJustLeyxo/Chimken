@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Gyrator
+Description=Rotating Ubuntu logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/gyrator/
+ScriptFile=/usr/share/plymouth/themes/gyrator/gyrator.script
+UseFirmwareBackground=false
