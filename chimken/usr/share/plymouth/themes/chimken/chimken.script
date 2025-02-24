@@ -3,17 +3,24 @@ Window.SetBackgroundBottomColor(0, 0, 0);
 
 background.SetZ(-1);
 
-icon_image = Image("ubuntu.png");
-icon = Sprite();
-icon.SetX(Window.GetWidth() / 2 - icon_image.GetWidth() / 2);
-icon.SetY(Window.GetHeight() / 2 - icon_image.GetHeight() / 2);
-icon.SetImage(icon_image);
+icon_image_inner = Image("ubuntu-inner.png");
+icon_inner = Sprite();
+icon_inner.SetX(Window.GetWidth() / 2 - icon_image_inner.GetWidth() / 2);
+icon_inner.SetY(Window.GetHeight() / 2 - icon_image_inner.GetHeight() / 2);
+icon_inner.SetImage(icon_image_inner);
+
+icon_image_outer = Image("ubuntu-outer.png");
+icon_outer = Sprite();
+icon_outer.SetX(Window.GetWidth() / 2 - icon_image_outer.GetWidth() / 2);
+icon_outer.SetY(Window.GetHeight() / 2 - icon_image_outer.GetHeight() / 2);
+icon_outer.SetImage(icon_image_outer);
 
 update_count = 0;
 
 fun refresh() {
 	update_count++;
-	icon.SetImage(icon_image.Rotate(0.025 * update_count));
+	icon_inner.SetImage(icon_image_inner.Rotate(-0.025 * update_count));
+	icon_outer.SetImage(icon_image_outer.Rotate(0.025 * update_count));
 }
 
 Plymouth.SetRefreshFunction(refresh);
