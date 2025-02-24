@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Remove old
-./remove.sh
+sudo apt purge gyrator
 
 # Package new
 ./package.sh
 
 # Install new
-./install.sh
+sudo apt install ./gyrator.deb
 
-# SHow new
+# Show new
 ./test.sh
