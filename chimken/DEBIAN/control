@@ -1,8 +1,8 @@
-Package: gyrator
+Package: chimken
 Version: 0.0.0
 Section: development
 Priority: optional
 Architecture: all
 Depends: plymouth (>=0.9.5), dpkg, initramfs-tools
 Maintainer: leonard.s.pfeiffer@gmx.net
-Description: Plymouth theme
+Description: Plymouth Theme
